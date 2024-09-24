@@ -1,0 +1,46 @@
+body{
+    margin-left: 2%;
+}
+/* header{
+    background-color: rgb(235, 217, 217);
+    height: 30px;
+} */
+a{
+    text-decoration: none;
+    color: rgb(141, 133, 133);
+    font-weight: bold;
+    padding: 15px;
+    margin-top: 10px;
+    font-size: large;
+}
+.shadow{
+    box-shadow: 5px;
+    color: black;
+}
+.text-bold-weight{
+    font-size: larger;
+    font-weight: bold;
+}
+.bg1{
+    background-image: url(images/hero3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    align-items: center;
+}
+.logos{
+    width: 10%;
+    filter: blur(1.5rem);
+    filter: brightness(0.5);
+}
+.logos:hover{
+    width: 10%;
+    filter: blur(3rem);
+    filter: brightness(0.9);
+    border: 2px solid orange;
+    margin-top: -30px;
+}
+.landind_keyword:hover{
+    color: orange;
+    margin-top: -20px;
+}
