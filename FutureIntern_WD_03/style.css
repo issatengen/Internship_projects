@@ -1,0 +1,74 @@
+body{
+    background-image: url(background_image/backgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display{
+    border-radius: 10px;
+    padding: 2%;
+    width: 80%;
+    height: 40px;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    box-shadow: 4px 3px 3px 2px rgb(0, 0, 0,0.2);
+}
+.interface{
+    border-radius: 5%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 5%;
+    width: 50%;
+    height: 300px;
+    background-color: rgba(250, 251, 252, 0.925);
+    box-shadow: 4px 3px 3px 2px rgb(0, 0, 0,0.1);
+
+}
+.interface:hover{
+    background-color: rgb(75, 44, 44,0.1);
+}
+.submit-button{
+    background-color: rgb(149, 149, 226);
+    border-radius: 5px;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 25%;
+    height: 30px;
+    border: none;
+}
+.submit-button:hover{
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+}
+input{
+    border-radius: 5px;
+    width: 45%;
+    height: 25px;
+}
+select{
+    width: 35%;
+    height: 25px;
+    border-radius: 5px;
+}
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-overflow: 1px 1px 2px rgba(0, 0, 0,0.2);
+    font-size: 3rem;
+}
+H1:hover{
+    color: rgb(187, 94, 7);
+    font-weight: bold;
+}
+label{
+    font-weight: bold;
+}
+.footer{
+    padding: 3%;
+    margin-bottom: 2%;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0,0.2);
+    background-color: rgba(0, 0, 0,0.4);
+}
