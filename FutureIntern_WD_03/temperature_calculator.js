@@ -5,6 +5,7 @@ function calculate(){
     let type=document.getElementById('type').value;
     let fahrenheit=0;
     let celsius=0
+    let kelvin=0
 
     if(temperature && type){
         if(type==2){
@@ -14,6 +15,11 @@ function calculate(){
         if(type==1){
             fahrenheit=parseFloat(temperature)*9/5+32;
             document.getElementById('display').innerHTML="<b>"+temperature+" ℃ = "+fahrenheit+" ℉ </b>";
+        }
+        if(type==3){
+            fahrenheit=parseFloat(temperature)*9/5-459.67;
+            celsius=parseFloat(temperature)-273.15;
+            document.getElementById('display').innerHTML="<b>"+temperature+" K = "+celsius+" ℃ = "+fahrenheit+" ℉  </b>";
         }
     }else{
         console.log("No value");
