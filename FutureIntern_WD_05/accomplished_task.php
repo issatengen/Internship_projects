@@ -96,12 +96,9 @@
     </center>
 
     <!--Footer-->
-    <center>
-        <div class="footer">
-            © Copyright <b>2024</b> All right reserved <br>
-            Design by <b>Tengen Issa</b> WD_03
-        </div>
-    </center>
+    <?php
+    include_once 'footer.php';
+    ?>
     <script>
         let parameters=new URLSearchParams(window.location.search);
         let status=parameters.get('status');
