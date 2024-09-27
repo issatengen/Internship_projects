@@ -134,7 +134,7 @@ input{
     border-radius: 5px;
     background-color: rgb(70, 156, 70);
     height: 30px;
-    width: 15%;
+    width: 25%;
     color: white;
     font-size: large;
     font-weight: bold;
@@ -144,12 +144,13 @@ input{
 .add-task-button:hover{
     font-weight: bold;
     background-color: green;
+    width: 30%;
 }
 .list-task-button{
     border-radius: 5px;
     background-color: rgb(88, 74, 153);
     height: 30px;
-    width: 20%;
+    width: 25%;
     color: white;
     font-size: large;
     font-weight: bold;
@@ -159,6 +160,7 @@ input{
 .list-task-button:hover{
     font-weight: bold;
     background-color: blue;
+    width: 30%;
 }
 .h1{
     color: white;
