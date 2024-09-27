@@ -45,11 +45,25 @@
             <tbody>
                 <?php
                 while($this_list=$list->fetch()){
-                    $diff=date('H:i:s')-$this_list['time_added'];
+                    $currentTime = new DateTime();
+                    $timeAdded = new DateTime($this_list['time_added']);
+                    $interval = $currentTime->diff($timeAdded);
+                    $diffHour=($interval->days * 24) + $interval->h;
+                    $diffMin = ($interval->days * 24 * 60) + ($interval->h * 60) + $interval->i;
+                    $diffSec=($interval->days * 24 * 60 * 60) + ($interval-> h * 60 * 60) + ($interval->i * 60) + $interval->s;
+
+                    // Calculate and ajust time
+                    while($diffSec >= 59){
+                        $diffSec -=  60;
+                        $diffMin++;
+                    }
+                    while($diffMin >= 59){
+                        $diffMin -= 60;
+                    }
                 ?>
                 <tr>
                     <td>
-                        <span class="added">Added <?php echo '<b>'. $diff ?> hours </b> ago</span><br><br>
+                        <span class="added">Added <?php echo '<b>'. $diffHour.'H : '. $diffMin.'Min' ?>  </b> ago</span><br><br>
                         <span class="task-description"><?php echo $this_list['task_description']?></span><br>
                         ▶ <?php echo '<b>'.$this_list['task_name'].'</b>'?>
                     </td>
